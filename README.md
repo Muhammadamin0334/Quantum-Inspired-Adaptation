@@ -66,7 +66,7 @@ model = inject_qira(
 train_data = [
     {
         "instruction": "What is QIA?", 
-        "output": "QIA is a quasi-orthogonal iterative adaptation technique for efficient LLM fine-tuning and hallucination suppression."
+        "output": "QIA is a quantum iterative adaptation technique for efficient LLM fine-tuning and hallucination suppression."
     },
     {
         "instruction": "How does QIA work?", 

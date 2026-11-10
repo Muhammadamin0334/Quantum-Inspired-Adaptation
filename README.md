@@ -19,7 +19,7 @@
 
 ## 📖 Overview
 
-**QIA (Quasi-Orthogonal Iterative Adaptation)** is an advanced, lightweight fine-tuning technique designed for Large Language Models (LLMs). By freezing base model weights and leveraging structured phase-shift parameters alongside trigonometric wave mixing, QIA stabilizes output representations, suppresses hallucinations, and achieves high training efficiency with minimal computational overhead.
+**QIA (Quantum Iterative Adaptation)** is an advanced, lightweight fine-tuning technique designed for Large Language Models (LLMs). By freezing base model weights and leveraging structured phase-shift parameters alongside trigonometric wave mixing, QIA stabilizes output representations, suppresses hallucinations, and achieves high training efficiency with minimal computational overhead.
 
 ---
 

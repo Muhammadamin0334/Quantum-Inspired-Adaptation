@@ -1,14 +1,40 @@
-# QIA: Quantum-Inspired Adaptation
+<div align="center">
 
-**QIA** is a high-efficiency fine-tuning technique for Large Language Models (LLMs). It uses complex-valued phase interference to suppress hallucinations and amplify correct pathways.
+# QIA: Quasi-Orthogonal Iterative Adaptation
 
-## Installation
-```bash
-pip install git+[https://github.com/Muhammadamin0334/Quantum-Inspired-Adaptation.git](https://github.com/Muhammadamin0334/Quantum-Inspired-Adaptation.git)
-```
-Quickstart & Usage
-Below is a complete example showing how to load a model, inject QIA adapters, prepare data, and run fine-tuning using QIATrainer.
+<p align="center">
+  <b>A high-efficiency, lightweight fine-tuning framework for Large Language Models powered by reservoir computing and trigonometric wave mixing.</b>
+</p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" alt="Python Version">
+  <img src="https://img.shields.io/badge/PyTorch-2.0%2B-orange.svg" alt="PyTorch">
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
+  <img src="https://img.shields.io/badge/Status-Active-success.svg" alt="Status">
+</p>
+
+</div>
+
+---
+
+## 📖 Overview
+
+**QIA (Quasi-Orthogonal Iterative Adaptation)** is an advanced, lightweight fine-tuning technique designed for Large Language Models (LLMs). By freezing base model weights and leveraging structured phase-shift parameters alongside trigonometric wave mixing, QIA stabilizes output representations, suppresses hallucinations, and achieves high training efficiency with minimal computational overhead.
+
+---
+
+## ✨ Key Features
+
+* **Parameter-Efficient Training:** Freezes base model parameters and isolates updates to lightweight adapter layers and dual-component readout matrices.
+* **Phase-Shift Parameterization:** Employs dynamic phase shifts and trigonometric wave mixing to amplify correct semantic trajectories and destructively interfere with noise.
+* **Built-In Wave Regularization:** Includes a custom `QIATrainer` featuring L2 regularization over phase-shift parameters to maintain mathematical stability during gradient descent.
+* **Seamless Integration:** Designed to easily inject into standard transformer attention layers (`c_attn`, `q_proj`, `v_proj`) across popular architectures like GPT-2, Llama, and Mistral.
+
+---
+
+## 📦 Installation
+
+Install QIA directly from your GitHub repository using `pip`:
 import torch
 from transformers import (
     AutoModelForCausalLM, 
@@ -40,7 +66,7 @@ model = inject_qira(
 train_data = [
     {
         "instruction": "What is QIA?", 
-        "output": "QIA is a quantum iterative adaptation technique for efficient LLM fine-tuning and hallucination suppression."
+        "output": "QIA is a quasi-orthogonal iterative adaptation technique for efficient LLM fine-tuning and hallucination suppression."
     },
     {
         "instruction": "How does QIA work?", 
@@ -76,7 +102,8 @@ trainer = QIRATrainer(
     phase_reg_weight=1e-3  # Regularization penalty for phase stability
 )
 
-# 5. Train
+# 5. Train Model
+print("Starting QIA fine-tuning...")
 trainer.train()
 
 # 6. Test Generation
@@ -93,4 +120,8 @@ with torch.no_grad():
         pad_token_id=tokenizer.eos_token_id
     )
 
+print("\n--- Generated Output ---")
 print(tokenizer.decode(outputs[0], skip_special_tokens=True))
+
+```bash
+pip install git+[https://github.com/Muhammadamin0334/Quantum-Inspired-Adaptation.git](https://github.com/Muhammadamin0334/Quantum-Inspired-Adaptation.git)

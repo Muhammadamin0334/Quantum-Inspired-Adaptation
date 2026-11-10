@@ -1,6 +1,6 @@
 <div align="center">
 
-# QIA: Quasi-Orthogonal Iterative Adaptation
+# QIA: Quantum Iterative Adaptation
 
 <p align="center">
   <b>A high-efficiency, lightweight fine-tuning framework for Large Language Models powered by reservoir computing and trigonometric wave mixing.</b>

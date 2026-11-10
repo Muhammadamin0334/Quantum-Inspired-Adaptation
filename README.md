@@ -1,6 +1,6 @@
 <div align="center">
 
-# QIA: Quantum Iterative Adaptation
+# QIA: Quantum Inspired Adaptation
 
 <p align="center">
   <b>A high-efficiency, lightweight fine-tuning framework for Large Language Models powered by reservoir computing and trigonometric wave mixing.</b>
@@ -19,7 +19,7 @@
 
 ## 📖 Overview
 
-**QIA (Quantum Iterative Adaptation)** is an advanced, lightweight fine-tuning technique designed for Large Language Models (LLMs). By freezing base model weights and leveraging structured phase-shift parameters alongside trigonometric wave mixing, QIA stabilizes output representations, suppresses hallucinations, and achieves high training efficiency with minimal computational overhead.
+**QIA (Quantum Inspired Adaptation)** is an advanced, lightweight fine-tuning technique designed for Large Language Models (LLMs). By freezing base model weights and leveraging structured phase-shift parameters alongside trigonometric wave mixing, QIA stabilizes output representations, suppresses hallucinations, and achieves high training efficiency with minimal computational overhead.
 
 ---
 
@@ -66,7 +66,7 @@ model = inject_qira(
 train_data = [
     {
         "instruction": "What is QIA?", 
-        "output": "QIA is a quantum iterative adaptation technique for efficient LLM fine-tuning and hallucination suppression."
+        "output": "QIA is a quantum inspired adaptation technique for efficient LLM fine-tuning and hallucination suppression."
     },
     {
         "instruction": "How does QIA work?", 

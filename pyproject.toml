@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qira-llm"
+version = "0.1.0"
+description = "Quantum-Inspired Reservoir Adaptation (QIRA) for hallucination-resistant LLM fine-tuning."
+readme = "README.md"
+authors = [{ name = "Muhammad Amin" }]
+license = { text = "MIT" }
+dependencies = [
+    "torch>=2.0.0",
+    "transformers>=4.30.0",
+    "datasets>=2.0.0"
+]
